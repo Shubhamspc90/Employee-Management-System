@@ -13,7 +13,7 @@ public class conn {
     public conn(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/employeeManagement","root","Shubh@m4080");
+            connection= DriverManager.getConnection("jdbc:mysql://localhost:3307/employeeManagement","root","Shubh@m4080");
             statement=connection.createStatement();
         }catch(Exception e){
             e.printStackTrace();
